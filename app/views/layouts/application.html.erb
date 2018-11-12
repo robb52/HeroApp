@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HeroApp</title>
+    <title>Super Hero App</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,11 @@
   </head>
 
   <body>
+
+    <%= link_to 'Home Page', root_path %>
+
+    <%= link_to 'Create A Team', home_team_path %>
+
     <%= yield %>
   </body>
 </html>
