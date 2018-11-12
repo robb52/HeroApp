@@ -11,9 +11,7 @@
 
   <body>
 
-    <%= link_to 'Home Page', root_path %>
-
-    <%= link_to 'Create A Team', home_team_path %>
+    <%= render 'home/shared/navbar' %>
 
     <%= yield %>
   </body>
