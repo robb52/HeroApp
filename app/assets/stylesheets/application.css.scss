@@ -73,8 +73,23 @@ img {
   color: #CE36A2;
   font-size: 35px;
   font-family: 'Luckiest Guy', cursive;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
  }
 
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand:active {
+  color: #CE36A2;
+  transform: scale(1.1);
+}
+ 
 a {
   padding: 10px;
   color: #CE36A2;
@@ -82,7 +97,7 @@ a {
 }
 
 a:hover{
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
