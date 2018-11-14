@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   get 'home/team'
   
+  post 'home/team' => 'home#team'
 end
