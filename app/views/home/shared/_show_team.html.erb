@@ -3,20 +3,40 @@
   <div class="container">
     <div class="row">
       <div class="col-4 image">
-        <img src="<%= @avatar %>">
+
+        <% rand_num = rand(1..1000) %>
+        <% set_number = rand(1..2) %>
+
+        <% if set_number == 1 %>
+          <% set = "set1" %>
+        <% else %>
+          <% set = "set2" %>
+        <% end %>
+
+        <% bg = rand(1..2) %>
+        <% if bg == 1 %>
+          <% background = "bg1" %>
+        <% else %>
+          <% background = "bg2" %>
+        <% end %>
+ 
+        <% avatar = Faker::Avatar.image(rand_num, "300x300", "png", set,  background) %>
+
+        <img src="<%= avatar %>">
       </div>
+
       <div class="col-8 body">
           <div class="name"> Your Superhero Name: </div>
-            <%= @hero_name %><br/>
+            <%= Faker::Superhero.name %><br/>
         
             <div class="power">Your Superhero Power:</div>
-            <%= @hero_power %><br/>
+            <%= Faker::Superhero.power %><br/>
 
            <div class="title">Your Under Cover Day Job:</div>
-           <%= @corp_title %><br/>
+           <%= Faker::Job.title%><br/>
         
            <div class="corp">Your Corporate Superpower is:</div>
-           <%= @corp_power %>
+           <%= Faker::Company.bs.titleize %>
         
       </div>
 

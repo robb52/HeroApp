@@ -24,7 +24,7 @@ class HomeController < ApplicationController
       @background = "bg2"
     end
  
-  @avatar = Faker::Avatar.image(@rand_num, "300x300", "png", @set,  @background)
+    @avatar = Faker::Avatar.image(@rand_num, "300x300", "png", @set,  @background)
 
   end
 

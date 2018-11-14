@@ -14,6 +14,10 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Acme|Luckiest+Guy');
 
+body {
+ background-image: url(/assets/cmsuperhero-.jpg);
+}
+
 img {
   margin: 20px;
   margin-top: 50px;
@@ -119,6 +123,14 @@ a:hover{
   color: #CE36A2;
 }
 
+.card-body {
+  background-color: #C1FAFC;
+}
 
+.btn.btn-success {
+  margin-top: 30px;
+}
 
-
+.form-control {
+  margin-top: 30px;
+}
