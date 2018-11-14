@@ -12,3 +12,96 @@
  *
  */
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Acme|Luckiest+Guy');
+
+img {
+  margin: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+
+.card {
+  margin-top: 50px;
+}
+
+.col-8.body {
+  margin-top: 50px;
+  font-size: 18px;
+  color: #CE36A2;
+}
+
+.name {
+  margin-bottom: -5px;
+  font-size: 25px;
+  color: #446BA4;
+  font-family: 'Acme', sans-serif;
+}
+
+.power {
+  margin-bottom: -5px;
+  font-size: 25px;
+  color: #446BA4;
+  font-family: 'Acme', sans-serif;
+}
+
+.title{
+  margin-bottom: -5px;
+  font-size: 25px;
+  color: #446BA4 ;
+  font-family: 'Acme', sans-serif;
+}
+
+.corp {
+  margin-bottom: -5px;
+  font-size: 25px;
+  color: #446BA4;
+  font-family: 'Acme', sans-serif;
+}
+
+.row {
+  background-color: #C1FAFC;
+}
+
+.navbar.navbar-expand-lg {
+  background-color: #2738EA;
+  padding: 25px;
+  border-bottom: solid 2px black;
+}
+ 
+ .navbar-brand {
+  color: #CE36A2;
+  font-size: 35px;
+  font-family: 'Luckiest Guy', cursive;
+ }
+
+a {
+  padding: 10px;
+  color: #CE36A2;
+  text-decoration: none;
+}
+
+a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.card {
+  border: solid 1px black;
+}
+
+.card-header {
+  border-color: black;
+  background-color: black;
+}
+
+.card-footer {
+ border-color: black;
+ background-color: black;
+}
+
+
+
+
+
+

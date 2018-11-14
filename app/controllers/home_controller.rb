@@ -14,8 +14,7 @@ class HomeController < ApplicationController
     if @set_number == 1
       @set = "set1"
     else
-      @set = "set2"
-    
+      @set = "set2" 
     end
 
     @bg = rand(1..2)

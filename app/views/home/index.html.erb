@@ -1,27 +1,38 @@
 <div class="container">
   <div class="card">
     <div class="card-header">
-      <%= link_to 'Home Page', root_path %>
+      <%= link_to 'Generate a New Superhero', root_path, class: "btn btn-primary" %>
     </div>
 
-    <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          Your Superhero Name:<br/> <%= @hero_name %><br/>
-          Your Superhero Power:<br/><%= @hero_power %>
-          <p>
-           Your Under Cover Day Job:<br/> <%= @corp_title %>
-         </p>
-         <p>
-           Your Corporate Superpower is:<br/> <%= @corp_power %>
-         </p>
+    <div class="container body">
+      <div class="row">
+        <div class="col-4 image">
+          <img src="<%= @avatar %>">
+        </div>
+        <div class="col-8 body">
+            <div class="name"> Your Superhero Name: </div>
+              <%= @hero_name %><br/>
+          
+              <div class="power">Your Superhero Power:</div>
+              <%= @hero_power %><br/>
+      
+             <div class="title">Your Under Cover Day Job:</div>
+             <%= @corp_title %><br/>
+          
+             <div class="corp">Your Corporate Superpower is:</div>
+             <%= @corp_power %>
+          
+        </div>
 
-         <img src="<%= @avatar %>">
-        
+         <div class="col-4">  
+         </div>
+           
+      </div>
+      
     </div>
-
+    
     <div class="card-footer">
-    <%= link_to 'Create A Team', home_team_path, class: "btn btn-primary" %>
+    <%= link_to 'Generate a Team', home_team_path, class: "btn btn-primary" %>
     </div>
   </div>
 </div>
